@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG UC Purchase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>PUBG UC Purchase</h2>
+    <form id="payment-form">
+        <label for="uc-amount">Enter UC Amount:</label>
+        <input type="number" id="uc-amount" name="uc-amount" required>
+
+        <label for="payment-method">Payment Method:</label>
+        <input type="text" id="payment-method" name="payment-method" value="EasyPaisa" readonly>
+
+        <label for="phone-number">Phone Number (EasyPaisa):</label>
+        <input type="tel" id="phone-number" name="phone-number" required>
+
+        <button type="submit">Submit Payment</button>
+    </form>
+</div>
+
+<script src="pubg.js"></script>
+</body>
+</html>
